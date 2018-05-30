@@ -7,59 +7,84 @@
     <meta name="description" content="Tyson's Portfolio">
     <meta name="keywords" content="HTML,CSS,JavaScript,Developer,Front End,University,Toronto">
     <meta name="author" content="Tyson Parkin">
-    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/bootstrap-4.1.1/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <nav>
-        <div id="name">Tyson Parkin</div>
-        <div id="links">
-            <a href="contact.html">Contact</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="index.html">About</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <h1 id="name">Tyson Parkin</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section>
-        <h1>About Me</h1>
-        <hr>
-        <a href="https://www.linkedin.com/in/tyson-parkin/">
-            <img src="assets/images/Profile Pic.png" alt="My Profile Picture" id="profilepic">
-        </a>
-        <p>
-            My name is Tyson Parkin and I am young professional who is currently enrolled in a Coding Bootcamp through the University
-            of Toronto’s School of Continuing Studies. My Bachelor’s degree in Philosophy from York University fostered the
-            critical thinking skills that allow me to learn quickly, and apply my knowledge effectively in this fast-paced
-            industry.
-        </p>
-        <br>
-        <p>
-            It was my successful career in IT Sales that first sparked my interest in coding. My resume includes positions at many well-known
-            and respected companies within the industry such as Softchoice, CDW and Rogers. Combined with my background in
-            visual arts from Etobicoke School of the Arts, I am perfectly suited for a career which requires both creativity
-            and an understanding of technology. If you wish to visit my LinkedIn page for more details regarding my education
-            and work experience cick on my profile picture to the left.
-        </p>
-        <br>
-        <img src="assets/images/cat.jpg" alt="My Cat" id="cat">
-        <p>
-            I am always looking to learn and grow, and I am very excited to begin my career as a Web Developer here in Toronto where
-            I live with my partner and cat (pictured). If you are a recruiter please feel free to reach out to me on LinkedIn.
-        </p>
-        <br>
-        <p>
-            This website, and all the projects contained therein, serve as my portfolio and are all examples of my work during the course
-            of the aforementioned Coding Bootcamp. For more information on the program
-            <a href="https://bootcamp.learn.utoronto.ca/coding"
-                target="_blank">click here</a>.
-        </p>
+    <section class="container" style="margin-top:100px">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>About Me</h1>
+                <hr>
+                <p>
+                    My name is Tyson Parkin and I am young professional who is currently enrolled in a Coding Bootcamp through the University
+                    of Toronto’s School of Continuing Studies. My Bachelor’s degree in Philosophy from York University fostered the
+                    critical thinking skills that allow me to learn quickly, and apply my knowledge effectively in this fast-paced
+                    industry.
+                </p>
+                <p>
+                    It was my successful career in IT Sales that first sparked my interest in coding. My resume includes positions at many well-known
+                    and respected companies within the industry such as Softchoice, CDW and Rogers. Combined with my background in
+                    visual arts from Etobicoke School of the Arts, I am perfectly suited for a career which requires both creativity
+                    and an understanding of technology. If you wish to visit my LinkedIn page for more details regarding my education
+                    and work experience cick on my profile picture to the left.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <br><br><br><br>
+                <a href="https://www.linkedin.com/in/tyson-parkin/">
+                    <img src="assets/images/Profile Pic.png" alt="My Profile Picture" id="profilepic" style="width:90%">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class=col-md-6>
+                <img src="assets/images/cat.jpg" alt="My Cat" id="cat" style="width:90%">
+            </div>
+            <div class=col-md-6>
+                <p>
+                    I am always looking to learn and grow, and I am very excited to begin my career as a Web Developer here in Toronto where
+                    I live with my partner and cat (pictured). If you are a recruiter please feel free to reach out to me on LinkedIn.
+                </p>
+                <p>
+                    This website, and all the projects contained therein, serve as my portfolio and are all examples of my work during the course
+                    of the aforementioned Coding Bootcamp. For more information on the program
+                    <a href="https://bootcamp.learn.utoronto.ca/coding" target="_blank">click here</a>.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>Copyright &copy;</p>
+    <footer class="page-footer">
+        <div class="container-fluid">
+            <p class="footer-copyright text-center">Copyright &copy;</p>
+        </div>
     </footer>
 
 </body>
